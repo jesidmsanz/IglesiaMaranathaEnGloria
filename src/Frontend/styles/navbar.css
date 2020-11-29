@@ -1,0 +1,17 @@
+
+.logoimg{
+    width: 60px !important;
+}
+.title{
+    font-size: 30px ;
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 10px !important;
+    padding-top: 40px;
+}
+
+.subtitle h6{
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
