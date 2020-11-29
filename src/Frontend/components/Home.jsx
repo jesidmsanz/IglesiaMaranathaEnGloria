@@ -1,37 +1,27 @@
+import { Switch, Route } from 'react-router-dom'
 import React, { Component } from "react";
-import NavMenu from './Nabvar'
-import Inicio from '../pages/Inicio';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import SobreNosotros from '../pages/SobreNosotros';
-import Ministerios from '../pages/Ministerios';
-import Donaciones from '../pages/Donaciones';
-import Contacto from '../pages/Contacto';
-import Slider from "./Slider"
-
+import NavMenu from "./nabVar";
+import Inicio from "../pages/inicio";
+import SobreNosotros from "../pages/sobreNosotros";
+import Ministerios from "../pages/ministerios";
+import Donaciones from "../pages/donaciones";
+import Contacto from "../pages/contacto";
+import Slider from "./slider";
 
 export default class Homepage extends Component {
   render() {
     return (
-      <div>
-        
-       <Router>
-      <NavMenu />
-
+      <>
+        <NavMenu />
         <Switch>
-        {/*   <Route path='/' exact component={Inicio} /> */}
-          <Route path='/sobre-nosotros' component={SobreNosotros} />
-      {/*     <Route path='/ministerios' component={Ministerios} />
-          <Route path='/donaciones' component={Donaciones} /> */}
-          <Route path='/contacto' component={Contacto} />
-
+          <Route exact path="/"  component={Inicio} />
+          <Route exact path="/sobre-nosotros" component={SobreNosotros} />
+          <Route exact path="/ministerios" component={Ministerios} />
+          <Route exact path="/donaciones" component={Donaciones} />
+          <Route exact path="/contacto" component={Contacto} />
         </Switch>
-      </Router>
-
-
-
-        <Slider/>
-        
-      </div>
+        <Slider />
+      </>
     );
   }
 }

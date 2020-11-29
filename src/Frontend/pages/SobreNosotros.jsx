@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function SobreNosotros() {
-    return (
-        <div>
-            <h1>aaaa</h1>
-        </div>
-    )
+export default class SobreNosotros extends Component {
+    render() {
+        return (
+            <div>
+                <h1>SobreNosotros</h1>
+            </div>
+        )
+    }
 }
-
-export default SobreNosotros
