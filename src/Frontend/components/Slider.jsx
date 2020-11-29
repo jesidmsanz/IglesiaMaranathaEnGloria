@@ -1,18 +1,17 @@
 import React from "react";
-/* import { Carousel } from "react-bootstrap"; */
-/* import cross from '../assets/img/cross.jpg';
-import bible from '../assets/img/bible.jpg';
-import prayer from '../assets/img/prayer.jpg'; */
+import { Carousel } from "react-bootstrap"; 
+/* import cross from '../assets/img/cross';
+import bible from '../assets/img/bible';
+import prayer from '../assets/img/prayer'; */ 
 
 export default class Slider extends React.Component {
   render() {
     return (
-      <h1>slider</h1>
-      /*         <Carousel>
+           <Carousel>
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={cross}
+          src="../assets/img/cross.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -23,7 +22,7 @@ export default class Slider extends React.Component {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={bible}
+          src=""
           alt="Third slide"
         />
     
@@ -35,7 +34,7 @@ export default class Slider extends React.Component {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={prayer}
+          src=""
           alt="Third slide"
         />
     
@@ -44,7 +43,7 @@ export default class Slider extends React.Component {
           <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel> */
+    </Carousel> 
     );
   }
 }

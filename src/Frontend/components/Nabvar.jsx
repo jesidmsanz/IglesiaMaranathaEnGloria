@@ -23,6 +23,11 @@ export default class NavMenu extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link>
+              <NavLink className="text-white" to="/">
+                <span>Inicio</span>
+              </NavLink>
+            </Nav.Link>
+            <Nav.Link>
               <NavLink className="text-white" to="/sobre-nosotros">
                 <span>Sobre Nosotros</span>
               </NavLink>
