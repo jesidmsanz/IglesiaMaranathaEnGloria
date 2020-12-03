@@ -6,7 +6,7 @@ import SobreNosotros from "../pages/sobreNosotros";
 import Ministerios from "../pages/ministerios";
 import Donaciones from "../pages/donaciones";
 import Contacto from "../pages/contacto";
-import Slider from "./slider";
+
 
 export default class Homepage extends Component {
   render() {
@@ -20,7 +20,7 @@ export default class Homepage extends Component {
           <Route exact path="/donaciones" component={Donaciones} />
           <Route exact path="/contacto" component={Contacto} />
         </Switch>
-        <Slider />
+       
       </>
     );
   }

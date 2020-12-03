@@ -1,8 +1,9 @@
 import React from "react";
-import { Carousel } from "react-bootstrap"; 
-/* import cross from '../assets/img/cross';
-import bible from '../assets/img/bible';
-import prayer from '../assets/img/prayer'; */ 
+import { Carousel, } from "react-bootstrap";
+import '../styles/slider.css';
+import  cross from '../assets/img/cross.jpg';
+import beach from '../assets/img/beach.jpg';
+import bible from '../assets/img/bible.jpg';
 
 export default class Slider extends React.Component {
   render() {
@@ -10,8 +11,8 @@ export default class Slider extends React.Component {
            <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src="../assets/img/cross.jpg"
+          className="slider-img"
+          src={cross}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,20 +22,21 @@ export default class Slider extends React.Component {
       </Carousel.Item>
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src=""
-          alt="Third slide"
+          className="slider-img"
+          src={beach}
+          alt="second slide"
         />
     
         <Carousel.Caption>
           <h3>Second slide label</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
-      </Carousel.Item>
+      </Carousel.Item> 
+
       <Carousel.Item>
         <img
-          className="d-block w-100"
-          src=""
+          className="slider-img"
+          src={bible}
           alt="Third slide"
         />
     

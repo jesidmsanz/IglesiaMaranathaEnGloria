@@ -1,0 +1,42 @@
+.img-section{
+    width: 500px;
+}
+
+.texto-section{
+    font-size: 40px;
+    font-weight: 500;
+  /*   color:#007BFF ; */
+  margin-top: 100px;
+}
+
+.our-service{
+ /*   background:#007BFF ;  */
+    background: #30336b;
+    width: 100%;
+    height: 300px;
+    color: white;
+    border-radius: 10px;
+}
+
+ .section-container{
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+} 
+.section-wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    padding-top: 20px;
+}
+
+.img-cont{
+    width: 350px;
+    height: 200px;
+    margin: 0px 30px 30px 0px;
+  
+ 
+}
